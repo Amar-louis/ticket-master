@@ -32,7 +32,7 @@
     </div>
     <div class="bip">BUS INTERSTATE PASS</div>
     <div class="rectangle">
-        <div class="rectangle-text1" onclick="updateZoneText()">3</div>
+        <div class="rectangle-text1" onclick="updateZoneText()">2</div>
         <div class="rectangle-text2">ZONES</div>
     </div>
     <div class="bottom-container">
@@ -89,7 +89,7 @@
         function updateZoneText() {
             const zoneElement = document.querySelector('.rectangle-text1');
             let currentZone = parseInt(zoneElement.textContent, 10);
-            currentZone = currentZone === 3 ? 7 ? 4 : currentZone + 1;
+            currentZone = currentZone === 7 ? 3  : currentZone + 1;
             zoneElement.textContent = currentZone;
         }
         updateMonthAndYear();
