@@ -18,6 +18,15 @@
         linkElement.href = updatedCssUrl;
         document.head.appendChild(linkElement);
     </script>
+    <script>
+        function openPopup() {
+            document.getElementById('popupModal').style.display = 'block';
+        }
+    
+        function closePopup() {
+            document.getElementById('popupModal').style.display = 'none';
+        }
+    </script>
 </head>
 <body style="margin: 0;">
     <div class="container">
@@ -27,9 +36,13 @@
             </div>
         </div>
         <div class="qr-square">
-            <a href="" onclick="window.open('your-qr-code-image.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">
-                <img class="qr-code" src="your-qr-code-image.png" alt="QR Code" >
+            <a href="#" onclick="openPopup(); return false;">
+                <img class="qr-code" src="your-qr-code-image.png" alt="QR Code">
             </a>
+            <div id="popupModal" style="display:none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 300px; height: 300px; background-color: white; border: 2px solid #ccc; box-shadow: 0 0 10px rgba(0,0,0,0.5); padding: 20px;">
+                <img src="your-qr-code-image.png" alt="QR Code" style="width: 100%; height: 100%; object-fit: contain;">
+                <button onclick="closePopup()" style="position: absolute; top: 10px; right: 10px;">X</button>
+            </div>
             <div class="tap-to-enlarge">Tap to enlarge</div>
         </div>
     </div>
