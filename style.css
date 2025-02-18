@@ -214,3 +214,8 @@ body {
     width: 100%;
     text-align: center;
 }
+a.back-font {
+    font-size: 35px;
+    margin-left: -363px;
+    font-family: 'SF Pro Display Medium';
+}
