@@ -113,7 +113,7 @@ body {
     display: grid;
     margin-left: 30px;
     margin-right: 30px;
-    background: linear-gradient(0deg, var(--first) 0%, white 50%, white 70%, var(--first) 100%);
+    background: linear-gradient(0deg, var(--first) 0%, white 30%, white 50%, var(--first) 100%);
     border-radius: 1.25vh;
     text-align: center;
     font-weight: 500;
